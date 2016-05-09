@@ -418,7 +418,7 @@ function user_get_user_details($user, $course = null, array $userfields = array(
     if (in_array('msn', $userfields) && $user->msn && (!isset($hiddenfields['msnid']) or $isadmin)) {
         $userdetails['msn'] = $user->msn;
     }
-	if (in_array('auth', $userfields) && $user->auth && (!isset($hiddenfields['auth']) or $isadmin)) {
+    if (in_array('auth', $userfields) && $user->auth && (!isset($hiddenfields['auth']) or $isadmin)) {
         $userdetails['auth'] = $user->auth;
     }
     if (in_array('lang', $userfields) && $user->lang && (!isset($hiddenfields['lang']) or $isadmin)) {
